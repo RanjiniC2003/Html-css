@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Merriweather:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan&family=Merriweather:ital,wght@1,300&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.whole-container{
+    background-color: #070724;
+    color: white;
+    background-image: url(../images/background.svg);
+}
+.main-header{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.main-header>h1{
+    font-size: 40px;
+}
+.head{
+    display: none;
+}
+.hr{
+    display: none;
+}
+.menu{
+    display: none;
+}
+hr{
+    border-color: #ffffff54;
+}
+.planets{
+    display: flex;
+
+}
+.close{
+    font-size: 25px;
+    padding: 19px;
+    display: flex;
+    justify-content: end;
+    display: none;
+    font-family: sans-serif;
+}
+.planets>h4{
+    padding: 16px;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+.planets>h4>a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.planets>h4>a:hover{
+    color: #ffffff7a;
+}
+#planet{
+    transition: all 0.6s;
+}
+.positions{
+    position:fixed;
+    z-index:1;
+    top:0px;
+    left:0px;
+    background: #1d292f;
+    color: #f3f3f3;
+    font-size:16px;
+    width: 300px;
+    font-weight:700;
+    transform:translateX(-100%);
+    opacity:0;
+    visibility:hidden;
+    transition:all 0.6s;
+    height:100%;
+    display: block;
+}
+.items{
+    transform:translateX(0%);
+    visibility:visible;
+    opacity:1;
+}
+h1{
+    font-family: 'Antonio', sans-serif;
+}
+.mercury-image{
+    background-image:url(../images/planet-mercury.svg) ;
+    background-size:100% 100% ;
+    height: 400px;
+    width: 400px;
+    margin-left: 16%;
+}
+.head>h4>a{
+	color: white;
+	text-decoration: none;
+}
+.mercury-details{
+    display: flex;
+    padding: 181px;
+    align-items: center;
+    justify-content: space-between;
+}
+.mercury-details-head{
+    width: 422px;
+}
+.m-d-h>h1{
+    font-size: 92px;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+.m-d-h>p{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 21px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 31px;
+}
+h4{
+    font-family: 'League Spartan', sans-serif;
+}
+.button1>a>span,.button2>a>span,.button3>a>span{
+    margin-right: 10px;
+}
+.source>a{
+    color: #ffffffcf;
+    font-weight: bold;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 18px;
+}
+.source{
+    color: #ffffffc2;
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+.button1,.button2,.button3{
+    margin-bottom: 20px;
+    border: 1px solid #ffffff36;
+    text-align:left;
+    padding: 20px;
+    width: 300px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    letter-spacing: 4px;
+    transition: 0.3s all;
+}
+.button1>span,.button2>span,.button3>span{
+    color: #ffffff8f;
+    margin-right: 14px;
+}
+.button1{
+    background-color:rgba(65, 158, 187, 1);
+}
+.button2:hover,.button3:hover{
+    background-color: #d8d8d845;
+}
+.button1>a,.button2>a,.button3>a{
+    color: #ffffff8f;
+    text-decoration: none;
+}
+.topheads>a{
+    color: white;
+    text-decoration: none;
+}
+.days{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.days>div>p{
+    color: #ffffff99;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.days>div>div{
+    font-size: 37px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.days>div{
+    border: 1px solid #ffffff45;
+    padding: 18px;
+    width: 220px;
+    margin-bottom: 110px;
+}
+@media only screen and (min-width: 280px) and (max-width: 420px){
+    .planets{
+        display: none;
+        padding-top: 20px;
+    }
+    .positions{
+    position:fixed;
+    z-index:1;
+    top:0px;
+    left:0px;
+    background: #1d292f;
+    color: #f3f3f3;
+    font-size:16px;
+    width:80%;
+    font-weight:700;
+    transform:translateX(-100%);
+    opacity:0;
+    visibility:hidden;
+    transition:all 0.6s;
+    height:100%;
+    display: block;
+}
+.items{
+    display: block;
+    transform:translateX(0%);
+    visibility:visible;
+    opacity:1;
+}
+    .planets>h4{
+        font-size: 21px;
+        margin-top: 20px;
+    }
+    .close{
+        display: block;
+        float: right;
+    }
+    .mercury-details{
+        flex-direction: column;
+        padding: 16px;
+        padding-top: 54px;
+    }
+    .mercury-image{
+        height: 240px;
+        width: 240px;
+        margin: auto;
+    }
+    .mercury-details-head{
+        width: 100%;
+        text-align: center;
+        margin-top: 77px;
+    }
+    .m-d-h>h1{
+        font-size: 34px;
+    }
+    .days{
+        flex-direction: column;
+    }
+    .m-d-h>p{
+        font-size: 17px;
+    }
+    .main-header>h1{
+        font-size: 27px;
+    }
+    .days>div{
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+    }
+    .days>div>div{
+        margin-top:0px;
+        font-size: 22px;
+    }
+    .days>div>p{
+        font-size: 13px;
+    }
+    .button1,.button2,.button3{
+        display: none;
+    }
+    .head{
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .hr {
+        display: block;
+    }
+    .head>h4:hover{
+        border-bottom: 2px solid #6D2ED5;
+    }
+    .head>h4{
+        padding-bottom: 10px;
+    }
+    .menu{
+        background-image:url(../images/menu.svg);
+        width: 30px;
+        height: 30px;
+        background-size: 100% 100%;
+        display: block;
+    }
+    .planets{
+        flex-direction: column;
+    }
+
+}
+@media only screen and (min-width:700px) and (max-width: 1300px){
+   .main-header{
+      flex-direction: column;
+   }
+
+   .main-header>h1{
+      margin-bottom: 35px;
+   }
+   .planets>h4{
+      padding: 12px;
+      font-size: 18px;
+   }
+   .mercury-details{
+        flex-direction: column;
+        padding: 0px;
+        padding-top: 150px;
+   }
+   .mercury-image{
+      height: 370px;
+      width: 370px;
+      margin: auto;
+      margin-bottom: 110px;
+   }
+   .mercury-details-head{
+        width: 90%;
+        display: flex;
+        align-items: center;
+   }
+   .days>div>div{
+        font-size: 27px;
+   }
+   .days>div{
+        width: 195px;
+   }
+   .m-d-h>p{
+        font-size: 25px;
+        margin-right: 40px;
+   }
+   .button1,.button2,.button3{
+        width: 340px;
+        padding: 31px;
+        font-size: 23px;
+   }
+}
+@media only screen and (min-width:421px) and (max-width: 700px){
+   .planets{
+        flex-direction: column;
+    }
+    .planets{
+        display: none;
+        padding-top: 20px;
+    }
+    .positions{
+    position:fixed;
+    z-index:1;
+    top:0px;
+    left:0px;
+    background: #1d292f;
+    color: #f3f3f3;
+    font-size:16px;
+    width:80%;
+    font-weight:700;
+    transform:translateX(-100%);
+    opacity:0;
+    visibility:hidden;
+    transition:all 0.6s;
+    height:100%;
+    display: block;
+}
+.items{
+    display: block;
+    transform:translateX(0%);
+    visibility:visible;
+    opacity:1;
+}
+    .planets>h4{
+        font-size: 21px;
+        margin-top: 20px;
+    }
+    .close{
+        display: block;
+        float: right;
+    }
+    .mercury-details{
+        flex-direction: column;
+        padding: 32px;
+    }
+    .mercury-image{
+        height: 240px;
+        width: 240px;
+        margin: auto;
+    }
+    .mercury-details-head{
+        width: 100%;
+        text-align: center;
+        margin-top: 77px;
+    }
+    .m-d-h>h1{
+        font-size: 34px;
+    }
+    .days{
+        flex-direction: column;
+    }
+    .m-d-h>p{
+        font-size: 17px;
+    }
+    .main-header>h1{
+        font-size: 27px;
+    }
+    .days>div{
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+    }
+    .days>div>div{
+        margin-top:0px;
+        font-size: 22px;
+    }
+    .days>div>p{
+        font-size: 13px;
+    }
+    .button1,.button2,.button3{
+        display: none;
+    }
+    .head{
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .hr {
+        display: block;
+    }
+    .head>h4:hover{
+        border-bottom: 2px solid #6D2ED5;
+    }
+    .head>h4{
+        padding-bottom: 10px;
+    }
+    .menu{
+        background-image:url(../images/menu.svg);
+        width: 30px;
+        height: 30px;
+        background-size: 100% 100%;
+        display: block;
+    }
+
+}18px;
+    width: 220px;
+    margin-bottom: 110px;
+}
+@media only screen and (min-width: 280px) and (max-width: 420px){
+    .planets{
+        display: none;
+        padding-top: 20px;
+    }
+    .positions{
+    position:fixed;
+    z-index:1;
+    top:0px;
+    left:0px;
+    background: #1d292f;
+    color: #f3f3f3;
+    font-size:16px;
+    width:80%;
+    font-weight:700;
+    transform:translateX(-100%);
+    opacity:0;
+    visibility:hidden;
+    transition:all 0.6s;
+    height:100%;
+    display: block;
+}
+.items{
+    display: block;
+    transform:translateX(0%);
+    visibility:visible;
+    opacity:1;
+}
+    .planets>h4{
+        font-size: 21px;
+        margin-top: 20px;
+    }
+    .close{
+        display: block;
+        float: right;
+    }
+    .mercury-details{
+        flex-direction: column;
+        padding: 32px;
+    }
+    .mercury-image{
+        height: 240px;
+        width: 240px;
+        margin: auto;
+    }
+    .mercury-details-head{
+        width: 100%;
+        text-align: center;
+        margin-top: 77px;
+    }
+    .m-d-h>h1{
+        font-size: 34px;
+    }
+    .days{
+        flex-direction: column;
+    }
+    .m-d-h>p{
+        font-size: 17px;
+    }
+    .main-header>h1{
+        font-size: 27px;
+    }
+    .days>div{
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+    }
+    .days>div>div{
+        margin-top:0px;
+        font-size: 22px;
+    }
+    .days>div>p{
+        font-size: 13px;
+    }
+    .button1,.button2,.button3{
+        display: none;
+    }
+    .head{
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .hr {
+        display: block;
+    }
+    .head>h4:hover{
+        border-bottom: 2px solid #6D2ED5;
+    }
+    .head>h4{
+        padding-bottom: 10px;
+    }
+    .menu{
+        background-image:url(../images/menu.svg);
+        width: 30px;
+        height: 30px;
+        background-size: 100% 100%;
+        display: block;
+    }
+    .planets{
+        flex-direction: column;
+    }
+
+}
+@media only screen and (min-width:700px) and (max-width: 1300px){
+   .main-header{
+      flex-direction: column;
+   }
+
+   .main-header>h1{
+      margin-bottom: 35px;
+   }
+   .planets>h4{
+      padding: 12px;
+      font-size: 18px;
+   }
+   .mercury-details{
+        flex-direction: column;
+        padding: 0px;
+        padding-top: 150px;
+   }
+   .mercury-image{
+      height: 370px;
+      width: 370px;
+      margin: auto;
+      margin-bottom: 110px;
+   }
+   .mercury-details-head{
+        width: 90%;
+        display: flex;
+        align-items: center;
+   }
+   .days>div>div{
+        font-size: 27px;
+   }
+   .days>div{
+        width: 195px;
+   }
+   .m-d-h>p{
+        font-size: 25px;
+        margin-right: 40px;
+   }
+   .button1,.button2,.button3{
+        width: 340px;
+        padding: 31px;
+        font-size: 23px;
+   }
+}
+@media only screen and (min-width:421px) and (max-width: 700px){
+   .planets{
+        flex-direction: column;
+    }
+    .planets{
+        display: none;
+        padding-top: 20px;
+    }
+    .positions{
+    position:fixed;
+    z-index:1;
+    top:0px;
+    left:0px;
+    background: #1d292f;
+    color: #f3f3f3;
+    font-size:16px;
+    width:80%;
+    font-weight:700;
+    transform:translateX(-100%);
+    opacity:0;
+    visibility:hidden;
+    transition:all 0.6s;
+    height:100%;
+    display: block;
+}
+.items{
+    display: block;
+    transform:translateX(0%);
+    visibility:visible;
+    opacity:1;
+}
+    .planets>h4{
+        font-size: 21px;
+        margin-top: 20px;
+    }
+    .close{
+        display: block;
+        float: right;
+    }
+    .mercury-details{
+        flex-direction: column;
+        padding: 32px;
+    }
+    .mercury-image{
+        height: 240px;
+        width: 240px;
+        margin: auto;
+    }
+    .mercury-details-head{
+        width: 100%;
+        text-align: center;
+        margin-top: 77px;
+    }
+    .m-d-h>h1{
+        font-size: 34px;
+    }
+    .days{
+        flex-direction: column;
+    }
+    .m-d-h>p{
+        font-size: 17px;
+    }
+    .main-header>h1{
+        font-size: 27px;
+    }
+    .days>div{
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+    }
+    .days>div>div{
+        margin-top:0px;
+        font-size: 22px;
+    }
+    .days>div>p{
+        font-size: 13px;
+    }
+    .button1,.button2,.button3{
+        display: none;
+    }
+    .head{
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .hr {
+        display: block;
+    }
+    .head>h4:hover{
+        border-bottom: 2px solid #6D2ED5;
+    }
+    .head>h4{
+        padding-bottom: 10px;
+    }
+    .menu{
+        background-image:url(../images/menu.svg);
+        width: 30px;
+        height: 30px;
+        background-size: 100% 100%;
+        display: block;
+    }
+
+}
